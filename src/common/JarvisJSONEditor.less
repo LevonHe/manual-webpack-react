@@ -1,0 +1,23 @@
+.jarvis-json-box {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  &:hover,
+  &:focus {
+    border-color: @primary-hover-color;
+    border-right-width: 1px !important;
+  }
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(234, 69, 14, 0.2);
+  }
+}
+
+.jarvis-json-box-readonly {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  .ace_gutter,
+  .ace_content {
+    cursor: not-allowed;
+  }
+}

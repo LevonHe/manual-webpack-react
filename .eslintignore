@@ -1,0 +1,11 @@
+# 忽略目录
+__tests__/
+node_modules/
+src/plugins/
+
+# node 覆盖率文件
+coverage/
+
+# 忽略文件
+**/*-min.js
+**/*.min.js

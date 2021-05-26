@@ -1,0 +1,55 @@
+@background_line_color: rgba(32, 255, 77, 0.1);
+@scanning_color_start: rgba(0, 255, 51, 0);
+@scanning_color_end: #00ff33;
+  
+.face-scanning {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  overflow: hidden;
+  background-image:
+      linear-gradient(0deg,
+      transparent 24%,
+      @background_line_color 25%,
+      @background_line_color 26%,
+      transparent 27%,
+      transparent 74%,
+      @background_line_color 75%,
+      @background_line_color 76%,
+      transparent 77%,
+      transparent),
+      linear-gradient(90deg,
+      transparent 24%,
+      @background_line_color 25%,
+      @background_line_color 26%,
+      transparent 27%,
+      transparent 74%,
+      @background_line_color 75%,
+      @background_line_color 76%,
+      transparent 77%,
+      transparent);
+  background-size: 3rem 3rem;
+  background-position: -1rem -1rem;
+}
+.face-scanning-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  // top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  background: linear-gradient(180deg, @scanning_color_start 50%, @scanning_color_end 300%);
+  border-bottom: 2px solid @scanning_color_end;
+  animation: scan 1.5s ease-in-out infinite;
+}
+@keyframes scan {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}

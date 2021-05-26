@@ -1,0 +1,28 @@
+{
+  "id": "367358351174144004",
+  "tenantId": "366928047041024000",
+  "organizationId": "366928047041024000",
+  "name": "Tenant admin",
+  "email": "xxx@xxx.cn",
+  "phoneNumber": null,
+  "metadata": null,
+  "enable": true,
+  "role": {
+    "id": "367358351174144001",
+    "tenantId": "366928043610083328",
+    "organizationId": "366928043610083328",
+    "name": "Tenant Admin",
+    "description": "租户管理员",
+    "metadata": null,
+    "createdAt": 1598268572943,
+    "updatedAt": null,
+    "permission": {
+      "id": "367358350000000000",
+      "name": "RootPermission",
+      "permissions": []
+    },
+    "public": true
+  },
+  "createdAt": 1598268573014,
+  "updatedAt": null
+}

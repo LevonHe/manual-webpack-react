@@ -1,0 +1,79 @@
+.iot-layout {
+  height: 100%;
+
+  .jarvis-logo {
+    display: block;
+    height: 58px;
+    background-color: @jarvis-menu-bg;
+    line-height: 58px;
+    text-align: center;
+
+    .logoImg {
+      max-width: 180px;
+      height: 32px;
+    }
+  }
+
+  .jarvis-header {
+    height: 58px;
+    line-height: 58px;
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(0, 21, 41, 0.1);
+    z-index: 1000;
+    .jarvis-trigger {
+      float: left;
+      padding: 0 24px;
+      font-size: 18px;
+      line-height: 58px;
+      cursor: pointer;
+      transition: color, 0.3s;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+
+    .jarvis-dropdown {
+      line-height: 58px;
+      float: right;
+      padding: 0 24px;
+    }
+    .jarvis-dropdown-link {
+      color: rgba(0, 0, 0, 0.65);
+    }
+    .jarvis-icon {
+      margin-right: 5px;
+    }
+    .jarvis-username {
+      display: inline-block;
+      max-width: 160px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+  }
+
+  .jarvis-content {
+    width: 100%;
+    overflow: auto;
+    background-color: #f0f2f5;
+
+    .jarvis-container {
+      // padding: 0 30px 20px;
+      min-width: 970px;
+      min-height: 830px;
+      color: #333;
+      background-color: #f0f2f5;
+    }
+  }
+  .jarvis-footer {
+    height: 42px;
+    background-color: #f0f2f5;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0;
+    color: #808080;
+  }
+}
